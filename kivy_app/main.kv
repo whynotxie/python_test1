@@ -1,0 +1,24 @@
+<RootWidget>:
+    orientation: 'vertical'
+    padding: dp(12)
+    spacing: dp(12)
+
+    Label:
+        id: lbl
+        text: root.label_text
+        font_size: '24sp'
+        halign: 'center'
+        valign: 'middle'
+
+    BoxLayout:
+        size_hint_y: None
+        height: '48dp'
+        spacing: dp(8)
+
+        Button:
+            text: 'Request Permissions'
+            on_press: app.request_permissions()
+
+        Button:
+            text: 'Tap me'
+            on_press: app.on_button_press()
